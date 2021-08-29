@@ -15,6 +15,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
 }
 
 /* CARD GENERAL LAYOUT */
@@ -100,6 +101,7 @@ h2 {
 
 .change {
     grid-area: 'change';
+    font-size: 14px;
 }
 
 h4 {
@@ -130,20 +132,33 @@ a {
     text-decoration: underline;
 }
 
+.change a:hover {
+    text-decoration: none;
+    color: hsl(245, 75%, 52%, 70%);
+}
+
 .payment{
     color: white;
     background-color: hsl(245, 75%, 52%);
-    border-radius: 8px;
-}
-
-.cancel {
-    background-color: white;
+    border-radius: 10px;
 }
 
 .payment a {
     color: white;
 }
 
+.payment:hover {
+    background-color: hsl(245, 75%, 52%, 70%);
+}
+
+.cancel {
+    background-color: white;
+}
+
 .cancel a{
-    color: rgb(133, 127, 127);
+    color: rgb(0,0,0,50%);
+}
+
+.cancel a:hover {
+    color: rgb(0, 0, 0);
 }
