@@ -14,25 +14,47 @@
 <body>
 
 <!-- Card Structure-->
-  <div class="card box">
+  <div class="card frame">
   
-    <img src='/images/illustration-hero.svg' alt='dancing illustration image'>
+    <!-- Content Section: Music Illustration-->
+    <div class='image'></div>
 
-    <h2>Order Summary</h2>
+    <!-- Contents-->
+    <div class='content frame'>
+      
+      <!-- Content Section: Summary Text-->
+      <div class='summary frame'>
+        <h2>Order Summary</h2>
+        <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+      device anywhere you like!</p>
+      </div>
 
-    <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
-    device anywhere you like!</p>
+      <!-- Content Section: Annual Plan Option-->
+      <div class='option frame'>
+        <div class='icon frame'>
+          <img src='/images/icon-music.svg' alt='musical note icon'>
+        </div>
 
-    <div class='option box'>
-      <img src='/images/icon-music.svg'alt='musical note icon'>
-      <h4>Annual Plan</h4>
-      <p>$59.99/year</p>
-        <a href="#">Change</a>
+        <!-- Content Section: Annual Plan Option-->
+        <div class='plan frame'>
+          <h4>Annual Plan</h4>
+          <p>$59.99/year</p>
+        </div>
+        <div class='change frame'>
+          <a href="#">Change</a>
+        </div>
+      </div>
+
+      <!-- Content Section: Call to Action-->
+      <div class='cta frame'>
+        <button class='btn payment frame'><a href='#'>Proceed to Payment</a></button>
+        <button class='btn cancel frame'><a href='#'>Cancel Order</a></button>
+      </div>
+
+      <!-- Content Section: End-->
     </div>
 
-    <button class='cta box'><a href='#'>Proceed to Payment</a></button>
-    <a href='#'>Cancel Order</a>
-
+  <!-- Card Structure: End-->
   </div>
 
 <!-- Challenge Information-->
@@ -40,7 +62,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/andrewjuliodev">Andrew Julio</a>.
   </div>
-  
+
 </body>
 
 </html>

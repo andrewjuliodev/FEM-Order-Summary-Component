@@ -1,2 +1,93 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/* WIREFRAMES FOR VISUAL HELP*/
+.frame {
+    border: 1px solid red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("/images/pattern-background-desktop.svg");
+    background-color: rgb(171, 196, 224);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+/* CARD GENERAL LAYOUT */
+.card {
+    margin: 10% auto;
+    width: 450px;
+    height: 700px;
+    border-radius: 10px;
+}
+
+/* CARD GENERAL LAYOUT - IMAGE*/
+.image {
+    width: 450px;
+    height: 220px;
+    grid-area: 'image';
+    background-image: url("/images/illustration-hero.svg");
+    border-radius: 10px 10px 0 0;
+}
+
+/* CARD GENERAL LAYOUT - CONTENT*/
+.content {
+    display: grid;
+    grid-template-rows: 200px 100px 100px;
+    grid-template-areas:
+    'summary'
+    'option'
+    'cta';
+    justify-content: center;
+    padding: 30px 0;
+}
+
+/* CARD: CONTENT GENERAL LAYOUT */
+.summary, .option, .cta {
+       width: 360px; 
+       margin: 0;
+       padding: 0;
+       justify-content: center;
+}
+
+/* CARD: CONTENT - SUMMARY */
+.summary {
+    height: 200px;
+    grid-area: 'summary';
+}
+
+/* CARD: CONTENT - OPTION */
+.option {
+    height: 100px;
+    grid-area: 'option';
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 'icon option change';
+}
+
+.icon {
+    grid-area: 'icon';
+}
+
+.plan {
+    grid-area: 'plan';
+}
+
+.change {
+    grid-area: 'change';
+}
+
+/* CARD: CONTENT - CALL TO ACTION */
+.cta {
+    height: 100px;
+    grid-area: 'cta';
+    display: flex;
+    flex-direction: column;
+}
+
