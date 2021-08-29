@@ -3,11 +3,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
-/* WIREFRAMES FOR VISUAL HELP
-.frame {
+/* WIREFRAMES FOR VISUAL HELP*/
+/*.frame {
     border: 1px solid red;
-}*/
-
+}
+*/
 
 body {
     background-image: url("/images/pattern-background-desktop.svg");
@@ -37,17 +37,17 @@ body {
     border-radius: 10px 10px 0 0;
 }
 
-/* CARD GENERAL LAYOUT - CONTENT*/
+/* CARD GENERAL LAYOUT - CONTENT
 .content {
     display: grid;
-    grid-template-rows: 150px 100px 150px;
+    grid-template-rows: 200px 100px 100px;
     grid-template-areas:
     'summary'
     'option'
     'cta';
     justify-content: center;
     padding: 30px 0;
-}
+}*/
 
 /* CARD: CONTENT GENERAL LAYOUT */
 .summary, .option, .cta {
@@ -59,6 +59,7 @@ body {
 
 /* CARD: CONTENT - SUMMARY */
 .summary {
+    height: 200px;
     grid-area: 'summary';
     text-align: center;
 }
@@ -68,27 +69,33 @@ h2 {
 }
 
 .summary p {
+    padding: 20px;
     color: hsl(0, 0%, 0%, 60%);
 }
 
 /* CARD: CONTENT - OPTION */
 .option {
-    width: 360px;
+    height: 100px;
     grid-area: 'option';
     display:grid;
-    grid-template-columns: 90px 180px 90px;
+    grid-template-columns: 60px 180px 60px;
     grid-template-areas: 'icon option change';
     background-color: hsl(225, 100%, 98%);
     border-radius: 10px;
     align-items: center;
 }
 
-.icon {
-    grid-area: 'icon';
-    display: flex;
-    justify-content: center;
+h4 {
+    font-weight: 700;
 }
 
+.option p {
+    padding: 5px;
+}
+
+.icon {
+    grid-area: 'icon';
+}
 
 .plan {
     grid-area: 'plan';
@@ -100,30 +107,26 @@ h2 {
 
 /* CARD: CONTENT - CALL TO ACTION */
 .cta {
+    height: 100px;
     grid-area: 'cta';
     display: flex;
     flex-direction: column;
+    padding: 20px 0;
 }
 
 .btn {
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px;
     font-weight: 900;
-    width: 360px;
 }
 
 a {
     text-decoration: none;
 }
 
-.change a {
-    text-decoration: underline;
-}
-
 .payment{
     color: white;
     background-color: hsl(245, 75%, 52%);
-    border-radius: 8px;
 }
 
 .cancel {
