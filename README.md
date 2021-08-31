@@ -7,3 +7,6 @@ The designs are in JPG static format. Using JPGs will mean that you'll need to u
 You will find all the required assets in the `/images` folder. The assets are already optimized.
 
 There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+
+# Finished Product
+<img src='/final.jpg'>
